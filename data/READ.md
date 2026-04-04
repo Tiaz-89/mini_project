@@ -1,5 +1,4 @@
-trends.py is the python file which pulls the data from api and gathered it in trends.json file(100 stories are collected)
-
+task1_data_collection.py is the python file which pulls the data from api and gathered it in trends.json file(100 stories are collected)
 
 Using 3 different functions in the python file
 
