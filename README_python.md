@@ -1,3 +1,4 @@
+# Task 1
 task1_data_collection.py is the python file which pulls the data from api and gathered it in trends.json file(100 stories are collected)
 
 Using 3 different functions in the python file
@@ -8,3 +9,5 @@ Using 3 different functions in the python file
 
 > categorize(title) - using the title here to categorise each story
 
+# Task 2
+task2_data_processing.py is the python file which reads the data from trends.json and cleaning up the data using pandas. After clean up it saves the data as trends_clean.csv 
