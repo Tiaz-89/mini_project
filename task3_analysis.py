@@ -30,4 +30,4 @@ df["engagement"] = df ["num_comments"]/(df["score"]+1)
 df["is_popular"] = df ["score"] > df["score"].mean()
 
 # Saving to csv file
-df.to_csv("data/trends_analysed.csv")
+df.to_csv("data/trends_analysed.csv", index = False)
