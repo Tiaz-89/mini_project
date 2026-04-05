@@ -7,12 +7,10 @@ with open("data/trends.json", "r") as file:
 
 print(f"Loaded {len(df)} stories from data/trends.json\n")
 print ("----------------------------------------")
-print(df.head(5))
-print ("----------------------------------------")
-print(df.describe()) 
-print ("----------------------------------------")
+print("Data type:")
 print(df.dtypes) # Shows the data type of each columns and confirms score and num_comments are int
 print ("----------------------------------------")
+print("Missing values:")
 print(df.isnull().sum()) # Shows how many missing values are there
 print ("----------------------------------------")
 
