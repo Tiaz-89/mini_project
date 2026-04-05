@@ -12,7 +12,6 @@
 # plt.title("Top 10 Stories by Score")
 # plt.xlabel("Score")
 # plt.ylabel("Title")
-# plt.subplots_adjust(left=0.50, right=0.95) # Text is onot visible fully so using this
 
 # plt.savefig("output/chart1_top_stories.png")
 # plt.show()
