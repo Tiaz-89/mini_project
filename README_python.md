@@ -11,3 +11,6 @@ Using 3 different functions in the python file
 
 # Task 2
 task2_data_processing.py is the python file which reads the data from trends.json and cleaning up the data using pandas. After clean up it saves the data as trends_clean.csv 
+
+# Task 3
+task3_analysis.py is the python file which reads the csv file from the task 2 and performing some analysis and saving it again in one more csv file namely trends_analysed.csv
