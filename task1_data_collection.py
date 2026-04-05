@@ -39,7 +39,7 @@ def categorize(title):
         for keyword in keywords:
             if keyword in title:
                return category
-    return "N/A"
+    return None
 
 
 ids = get_ids()
@@ -100,7 +100,7 @@ for item in selected_result:
     else:
         NA += 1
 
-print("Count of 'NA' category:", NA)
+print("Count of 'None' category:", NA)
 print("Count of 'technoloy' category:", technology)
 print("Count of 'worldnews' category:", world_news)
 print("Count of 'sports' category:", sports)
