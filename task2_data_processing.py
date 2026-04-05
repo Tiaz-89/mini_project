@@ -5,7 +5,7 @@ import json
 with open("data/trends.json", "r") as file:
   df = pd.DataFrame(json.load(file))
 
-print(f"Loaded {len(df)} stories from data/trends.json")
+print(f"Loaded {len(df)} stories from data/trends.json\n")
 print ("----------------------------------------")
 print(df.head(5))
 print ("----------------------------------------")
@@ -25,9 +25,12 @@ df=df[df["score"] > 5] # Removed the rows where the score is less than 5
 print(f"After removing low scores: {len(df)}")
 df["category"] = df["category"].fillna("others") # Filling the values none to others
 df["title"] = df["title"].str.strip() # removing the white spaces
-print ("----------------------------------------")
+print ("----------------------------------------\n")
 
 #Saving as csv
 df.to_csv("data/trends_clean.csv",index=False)
 
-print(f"Saved {len(df)} rows to data/trends_clean.csv")
+print(f"Saved {len(df)} rows to data/trends_clean.csv\n")
+
+print("Stories per category:")
+print(df["category"].groupby(df["category"]).count())
